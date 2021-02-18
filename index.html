@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <div>Beginning</div>
+      <ul>
+        <li><b>Information</b></li>
+      </ul>
+    </div>
+    <table id="table">
+      <tr>
+        <td>one</td>
+        <td>two</td>
+      </tr>
+      <tr>
+        <td>three</td>
+        <td>four</td>
+      </tr>
+    </table>
+
+        <script>
+          let divs = document.getElementsByTagName("div");
+          // alert(divs.length)
+          divsQuery = document.querySelectorAll('div')
+          // alert(divsQuery.length)
+
+        </script>
+
+    <div id="elem">Users:</div>
+    <ul>
+      <li>Jonh</li>
+      <li>Pete</li>
+    </ul>
+
+    <form name="my-form">
+      <div class="article">Article</div>
+      <div class="long article">Long Article</div>
+    </form>
+
+    <script id="script2">
+      // alert(divs.length);
+      // alert(divsQuery.length);
+      console.log("divs: ", divs);
+      console.log("divsQuery: ", divsQuery);
+      let elem = document.getElementById("elem");
+      let elems = document.querySelectorAll("ul > li:last-child");
+      table = document.querySelector("#table");
+      liTags = document.getElementsByTagName("li");
+      liTags[0].innerText = "New information";
+      elems[0].matches("li");
+      console.log(elems);
+    </script>
+  </body>
+</html>
